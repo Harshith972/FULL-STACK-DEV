@@ -155,14 +155,17 @@ if username == actual_username and password == actual_password:
         case _:
             print("Invalid choice")
 
+    marks=int(input("Enter your marks: "))
+    if marks>=90:
+        print("Gold Student")
+    elif marks>=75:
+        print("Silver Student")
+    elif marks>=50:
+        print("Bronze Student")
+    else:
+        print("Regular Student")
+
 else:
     print("Incorrect username or password")
 
-marks=int(input("Enter your marks: "))
-if marks>=90:
-    print("Gold Student")
-elif marks>=75:
-    print("Silver Student")
-elif marks>=50:
-    print("Bronze Student")
-    
+
