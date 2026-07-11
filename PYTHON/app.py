@@ -128,17 +128,24 @@
 #         case _:
 #             print("Invalid date")
 
-#challenge
-actual_username = "admin"
-actual_password = "admin123"
-username=input("Enter your username: ")
-password=input("Enter your password: ")
+def main():
+    """
+    Handles the main user login flow.
+    """
+    #challenge
+    actual_username = "admin"
+    actual_password = "admin123"
 
-if username == actual_username and password == actual_password:
-    print("Login successful")
+    username = input("Enter your username: ")
+    password = input("Enter your password: ")
 
-    print("Menu")
+    if username == actual_username and password == actual_password:
+        print("Login successful")
+        print("Welcome, Admin!")
+        print("Menu")
+        # You can add more menu options here
+    else:
+        print("Incorrect username or password")
 
-    
-else:
-    print("Incorrect username or password")
+if __name__ == "__main__":
+    main()
