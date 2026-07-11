@@ -128,24 +128,41 @@
 #         case _:
 #             print("Invalid date")
 
-def main():
-    """
-    Handles the main user login flow.
-    """
-    #challenge
-    actual_username = "admin"
-    actual_password = "admin123"
+#challenge
+actual_username = "admin"
+actual_password = "admin123"
+username=input("Enter your username: ")
+password=input("Enter your password: ")
 
-    username = input("Enter your username: ")
-    password = input("Enter your password: ")
+if username == actual_username and password == actual_password:
+    print("Login successful")
 
-    if username == actual_username and password == actual_password:
-        print("Login successful")
-        print("Welcome, Admin!")
-        print("Menu")
-        # You can add more menu options here
-    else:
-        print("Incorrect username or password")
+    print("""Menu
+    1. View Profile
+    2. Change Password
+    3. Logout""")
 
-if __name__ == "__main__":
-    main()
+    print( "select the task number" )
+
+    num=int(input("Enter your choice: "))
+    match num:
+        case 1:
+            print("Profile details: Username: admin, Email: admin@example.com")
+        case 2:
+            print("Change Password")
+        case 3:
+            print("Logout")
+        case _:
+            print("Invalid choice")
+
+else:
+    print("Incorrect username or password")
+
+marks=int(input("Enter your marks: "))
+if marks>=90:
+    print("Gold Student")
+elif marks>=75:
+    print("Silver Student")
+elif marks>=50:
+    print("Bronze Student")
+    
