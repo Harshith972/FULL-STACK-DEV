@@ -158,7 +158,7 @@ if username == actual_username and password == actual_password:
 else:
     print("Incorrect username or password")
 
-marks=int(input("Enter your marks: "))
+marks=int(input("Enter your marks "))
 if marks>=90:
     print("Gold Student")
 elif marks>=75:
